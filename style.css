@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+}
+
+.header {
+    background-color: rgb(37, 37, 37);
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header h1 a{
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    padding: 5px;
+}
+.footer p{
+    display: inline;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 15px 15px 45px 15px; /* 45px on bottom to make scrollable on big devices */
+}
+
+
+#contact-cards.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-self: center;
+}
+
+.card{
+    border-style: solid;
+    border-radius: 40px;
+    padding: 0px 0px 35px 0px;
+    background-color: rgb(37, 37, 37);
+    overflow: hidden;
+}
+
+.card-thumbnail-container{
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-thumbnail{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    transition: transform 0.4s ease;
+    transform-origin: center;
+}
+
+.card-thumbnail:hover{
+    transform: scale(1.1);
+}
+
+.card-title{
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+.card-description{
+    text-align: center;
+    padding: 5px 15px 0px 15px;
+}
+
+.card-description a{
+    text-decoration: none;
+}
+
+.card-description img{
+    width: 1rem;
+}
